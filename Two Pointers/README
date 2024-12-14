@@ -1,0 +1,17 @@
+"Find pairs in a sorted array / find pairs" --> reminds the use of two pointers
+
+The key thing is to figure out the rules to shift the pointers (one or two, left or right)
+Identify the constraint. Shift the constraint.
+
+Hashmap is usually used to check for redundant results.
+
+The key thing is the use of dictionary (or hashmaps) based on such prefix sum array.
+Usually, if hashmap is used successfully, there is no need to actually create that prefix sum array.
+
+Remove dup in a list:
+list(set(ls))
+If the ls contains lists, change them into tuples.
+
+Multiple key values for hashMap:
+Memory = {}
+Memory[tuple([key1, key2, key3])] = value
