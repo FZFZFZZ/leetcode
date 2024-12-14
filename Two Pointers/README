@@ -5,8 +5,6 @@ Identify the constraint. Shift the constraint.
 
 Hashmap is usually used to check for redundant results.
 
-The key thing is the use of dictionary (or hashmaps) based on such prefix sum array.
-Usually, if hashmap is used successfully, there is no need to actually create that prefix sum array.
 
 Remove dup in a list:
 list(set(ls))
