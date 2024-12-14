@@ -13,3 +13,7 @@ If the ls contains lists, change them into tuples.
 Multiple key values for hashMap:
 Memory = {}
 Memory[tuple([key1, key2, key3])] = value
+
+Delete hashMap element:
+(python) del hashMap(key)
+(js) delete hashMap(key)
