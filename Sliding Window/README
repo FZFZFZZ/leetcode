@@ -12,3 +12,6 @@ def frequency_map(iterable):
 
 # Move the right pointer until a desired sub-iterable is found. Then move the left pointer until a desired sub-iterable is not found and 
 # record down the new (resL, resR) tuple if required
+
+
+# Use list(dict.value()) to get an array of hashmap values
