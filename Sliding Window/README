@@ -1,0 +1,14 @@
+# Use Two pointers to keep track of the substring / sub-array pos. Do not slice again and again.
+
+# freq_map: a hashmap that counts the frequency of elements in a iterable
+def frequency_map(iterable):
+    freq = {}
+    for item in iterable:
+        if item in freq:
+            freq[item] += 1
+        else:
+            freq[item] = 1
+    return freq
+
+# Move the right pointer until a desired sub-iterable is found. Then move the left pointer until a desired sub-iterable is not found and 
+# record down the new (resL, resR) tuple if required
