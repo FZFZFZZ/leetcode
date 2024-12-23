@@ -1,0 +1,17 @@
+    
+The classical reverseList function (need to memorise):
+def reverseList(head):
+    """
+    :type head: Optional[ListNode]
+    :rtype: Optional[ListNode]
+    """
+    node = None
+    while head != None:
+        temp = head.next
+        head.next = node
+        node = head
+        head = temp
+    return node
+
+In many scenarios, we need to use prev to keep track of the pointer to the 
+previous element. It should normally start at prev = Listnode(0)
