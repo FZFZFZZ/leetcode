@@ -1,0 +1,17 @@
+For duplicate number question, first thing to notice is that the elements serves also as pointers to other elements.
+
+E.g. 3 1 3 4 2  =>  
+
+  3  -->  4  -->  2  -->  3  -->  4
+          ^                  |
+          |------------------|
+
+
+Reason why at phase 2, slow needs to return to the index 0 element:
+
+Suppose from beginning to the cycle entry point, a steps are required. Suppose from the cycle entry point, k steps are required.
+Thus the slow pointer moves a+k steps towards the meeting point with the fast pointer. Since the fast pointer moves twice as fast as the slow one, it has moved 2a+2k steps. 
+Another way to represent how many steps the fast pointer has gone through is a+k+rest+k, while rest is the number of steps required from the meeting point to the entry point. Thus we have:
+2a+2k = a+k+rest+k
+rest = a
+That is the reason why the distance from beginning to the entry point and that from meeting point to the entry point is the same.
